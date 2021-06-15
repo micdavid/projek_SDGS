@@ -10,22 +10,22 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="../../../public/img/favicon.png" rel="icon">
-    <link href="../../../public/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?= BASEURL; ?>/img/favicon.png" rel="icon">
+    <link href="<?= BASEURL; ?>/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="../../../public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../../public/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="../../../public/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="../../../public/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="../../../public/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../../../public/vendor/aos/aos.css" rel="stylesheet">
+    <link href="<?= BASEURL; ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= BASEURL; ?>/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="<?= BASEURL; ?>/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="<?= BASEURL; ?>/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="<?= BASEURL; ?>/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?= BASEURL; ?>/vendor/aos/aos.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="../../../public/css/style.css" rel="stylesheet">
+    <link href="<?= BASEURL; ?>/css/style.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Day - v2.2.1
@@ -56,13 +56,13 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo mr-auto"><a href="index.html">COH</a></h1>
+            <h1 class="logo mr-auto"><a href="index.php">COH</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
@@ -95,7 +95,7 @@
 
                 <div class="row">
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-                        <img src="../../../public/img/about.jpg" class="img-fluid" alt="">
+                        <img src="<?= BASEURL; ?>/img/about.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
                         <h2>Donasi untuk Kemanusiaan</h2> <br>
@@ -110,33 +110,39 @@
         </section>
         <!-- End About Section -->
 
-        <!-- ======= Why Us Section ======= -->
-        <section id="why-us" class="why-us">
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
             <div class="container">
+
+                <div class="section-title">
+                    <span>Ongoing Charity</span>
+                    <h2>Ongoing Charity</h2>
+                    <p>Merupakan pengumpulan dana amal yang sedang berlangsung.</p>
+                </div>
 
                 <div class="row">
 
-                    <div class="col-lg-4" data-aos="fade-up">
-                        <div class="box">
-                            <span>01</span>
-                            <h4>Lorem Ipsum</h4>
-                            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-world"></i></div>
+                            <h4><a href="">Nemo Enim</a></h4>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
-                        <div class="box">
-                            <span>02</span>
-                            <h4>Repellat Nihil</h4>
-                            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-slideshow"></i></div>
+                            <h4><a href="">Dele cardo</a></h4>
+                            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="box">
-                            <span>03</span>
-                            <h4> Ad ad velit qui</h4>
-                            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-arch"></i></div>
+                            <h4><a href="">Divera don</a></h4>
+                            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
                         </div>
                     </div>
 
@@ -144,42 +150,19 @@
 
             </div>
         </section>
-        <!-- End Why Us Section -->
+        <!-- End Services Section -->
 
         <!-- ======= Services Section ======= -->
         <section id="services" class="services">
             <div class="container">
 
                 <div class="section-title">
-                    <span>Services</span>
+                    <span>Upcoming Charity</span>
                     <h2>Upcoming Charity</h2>
                     <p>Merupakan pengumpulan dana amal yang akan segera kami laksanakan.</p>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                            <h4><a href="">Lorem Ipsum</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4><a href="">Sed ut perspiciatis</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-tachometer"></i></div>
-                            <h4><a href="">Magni Dolores</a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                        </div>
-                    </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
                         <div class="icon-box">
@@ -238,7 +221,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-8 d-flex align-items-stretch" data-aos="zoom-in">
                         <div class="member">
-                            <img src="../../../public/img/team/team-1.jpg" alt="">
+                            <img src="<?= BASEURL; ?>/img/team/team-1.jpg" alt="">
                             <h4>Fathorrosi</h4>
                             <span>College Student</span>
                             <p>
@@ -255,7 +238,7 @@
 
                     <div class="col-lg-6 col-md-8 d-flex align-items-stretch" data-aos="zoom-in">
                         <div class="member">
-                            <img src="../../../public/img/team/team-3.jpg" alt="">
+                            <img src="<?= BASEURL; ?>/img/team/team-3.jpg" alt="">
                             <h4>Michael David Simon</h4>
                             <span>College Student</span>
                             <p>
@@ -423,17 +406,17 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="../../../public/vendor/jquery/jquery.min.js"></script>
-    <script src="../../../public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../public/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="../../../public/vendor/php-email-form/validate.js"></script>
-    <script src="../../../public/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../../../public/vendor/venobox/venobox.min.js"></script>
-    <script src="../../../public/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="../../../public/vendor/aos/aos.js"></script>
+    <script src="<?= BASEURL; ?>/vendor/jquery/jquery.min.js"></script>
+    <script src="<?= BASEURL; ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= BASEURL; ?>/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="<?= BASEURL; ?>/vendor/php-email-form/validate.js"></script>
+    <script src="<?= BASEURL; ?>/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="<?= BASEURL; ?>/vendor/venobox/venobox.min.js"></script>
+    <script src="<?= BASEURL; ?>/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="<?= BASEURL; ?>/vendor/aos/aos.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="../../../public/js/main.js"></script>
+    <script src="<?= BASEURL; ?>/js/main.js"></script>
 
 </body>
 
