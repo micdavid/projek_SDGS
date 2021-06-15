@@ -99,7 +99,7 @@
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
                         <h2>Donasi untuk Kemanusiaan</h2> <br>
-                        <p>
+                        <p style="text-align: justify;">
                             Charity of Humanity merupakan website yang kami buat sebagai sarana untuk mengumpulkan dana amal, yang akan digunakan untuk membantu saudara kita yang membutuhkan. Harapannya dengan adanya website ini akan memberi kemudahan untuk orang orang yang ingin
                             beramal, dan bisa sedikit membantu mereka yang sedang kesusahan.
                         </p>
