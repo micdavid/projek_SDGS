@@ -122,47 +122,25 @@
 
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
-                        <div class="card">
-                            <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </p>
-                                <a class="btn btn-danger" href="#" role="button">Donasi Sekarang</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php foreach($data['cm'] as $cm) : ?>
+                        <?php if($cm['id'] < 4) {?>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card">
-                            <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </p>
-                                <a class="btn btn-danger" href="#" role="button">Donasi Sekarang</a>
+                            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
+                                <div class="card">
+                                    <img src="<?= BASEURL; ?><?=$cm['img']; ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?=$cm['judul']; ?></h5>
+                                        <p class="card-text mb-2">
+                                            <small class="text-muted"><?=$cm['tanggal']; ?></small>
+                                        </p>
+                                        <p class="card-text mb-3"><?=$cm['subTittle']; ?></p>
+                                        <a class="btn btn-danger" href="#" role="button">Donasi Sekarang</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
-                        <div class="card">
-                            <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </p>
-                                <a class="btn btn-danger" href="#" role="button">Donasi Sekarang</a>
-                            </div>
-                        </div>
-                    </div>
+                        <?php } ?>
+                    <?php endforeach ?>
 
                 </div>
 
@@ -182,47 +160,25 @@
 
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
-                        <div class="card">
-                            <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </p>
-                                <a class="btn btn-danger" href="#" role="button">Donasi Sekarang</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php foreach($data['cm'] as $cm) : ?>
+                        <?php if($cm['id'] > 3) {?>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card">
-                            <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </p>
-                                <a class="btn btn-danger" href="#" role="button">Donasi Sekarang</a>
+                            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
+                                <div class="card">
+                                    <img src="<?= BASEURL; ?><?=$cm['img']; ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?=$cm['judul']; ?></h5>
+                                        <p class="card-text mb-2">
+                                            <small class="text-muted"><?=$cm['tanggal']; ?></small>
+                                        </p>
+                                        <p class="card-text mb-3"><?=$cm['subTittle']; ?></p>
+                                        <a class="btn btn-danger" href="#" role="button">Donasi Sekarang</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
-                        <div class="card">
-                            <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </p>
-                                <a class="btn btn-danger" href="#" role="button">Donasi Sekarang</a>
-                            </div>
-                        </div>
-                    </div>
+                        <?php } ?>
+                    <?php endforeach ?>
 
                 </div>
 
