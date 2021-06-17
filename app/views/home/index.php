@@ -122,19 +122,24 @@
 
                 <div class="row">
 
-                    <?php foreach($data['cm'] as $cm) : ?>
-                        <?php if($cm['id'] < 4) {?>
+                    <?php foreach ($data['cm'] as $cm) : ?>
+                        <?php if ($cm['id'] < 4) { ?>
 
                             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
                                 <div class="card">
-                                    <img src="<?= BASEURL; ?><?=$cm['img']; ?>" class="card-img-top" alt="...">
+                                    <img src="<?= BASEURL; ?><?= $cm['img']; ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="<?= BASEURL; ?>/detail"><?=$cm['judul']; ?></a></h5>
+                                        <h5 class="card-title"><a href="<?= BASEURL; ?>/ongoing"><?= $cm['judul']; ?></a></h5>
                                         <p class="card-text mb-2">
-                                            <small class="text-muted"><?=$cm['tanggal']; ?></small>
+                                            <small class="text-muted"><?= $cm['tanggal']; ?></small>
                                         </p>
-                                        <p class="card-text mb-3"><?=$cm['subTittle']; ?></p>
-                                        <a class="btn btn-danger" href="" role="button">Donasi Sekarang</a>
+                                        <b>
+                                            <p class="card-text mb-2">
+                                                KODE AMAL : <?= $cm['kode']; ?>
+                                            </p>
+                                        </b>
+                                        <p class="card-text mb-3"><?= $cm['subTittle']; ?></p>
+                                        <a class="btn btn-danger" href="<?= BASEURL; ?>/form" role="button">Donasi Sekarang</a>
                                     </div>
                                 </div>
                             </div>
@@ -160,18 +165,20 @@
 
                 <div class="row">
 
-                    <?php foreach($data['cm'] as $cm) : ?>
-                        <?php if($cm['id'] > 3) {?>
+                    <?php foreach ($data['cm'] as $cm) : ?>
+                        <?php if ($cm['id'] > 3) { ?>
 
                             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
                                 <div class="card">
-                                    <img src="<?= BASEURL; ?><?=$cm['img']; ?>" class="card-img-top" alt="...">
+                                    <img src="<?= BASEURL; ?><?= $cm['img']; ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <a href=""><h5 class="card-title"><?=$cm['judul']; ?></h5></a>
-                                        <p class="card-text mb-2">
-                                            <small class="text-muted"><?=$cm['tanggal']; ?></small>
-                                        </p>
-                                        <p class="card-text mb-3"><?=$cm['subTittle']; ?></p>
+                                        <h5 class="card-title"><a href="<?= BASEURL; ?>/incoming"><?= $cm['judul']; ?></a></h5>
+                                        <b>
+                                            <p class="card-text mb-2">
+                                                KODE AMAL : <?= $cm['kode']; ?>
+                                            </p>
+                                        </b>
+                                        <p class="card-text mb-3"><?= $cm['subTittle']; ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -290,8 +297,7 @@
                 <div class="row" data-aos="fade-up">
 
                     <div class="col-lg-6 ">
-                        <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                            frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+                        <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
                     </div>
 
                     <div class="col-lg-6">

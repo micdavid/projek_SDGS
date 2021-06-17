@@ -1,10 +1,10 @@
 <?php
-class Detail extends Controller
+class Ongoing extends Controller
 {
     public function index()
     {
         $data['title'] = 'Detail Page';
         $data['cm'] = $this->model('CharityModel')->getAllCharity();
-        $this->view('detail/index', $data);
+        $this->view('ongoing/index', $data);
     }
 }
