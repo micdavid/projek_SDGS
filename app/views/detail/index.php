@@ -10,22 +10,22 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?= BASEURL; ?>assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<?= BASEURL; ?>/assets/img/favicon.png" rel="icon">
+  <link href="<?= BASEURL; ?>/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="<?= BASEURL; ?>public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="<?= BASEURL; ?>public/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="<?= BASEURL; ?>public/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="<?= BASEURL; ?>public/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="<?= BASEURL; ?>public/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="<?= BASEURL; ?>public/vendor/aos/aos.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="<?= BASEURL; ?>public/css/style.css" rel="stylesheet">
+  <link href="<?= BASEURL; ?>/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Day - v2.2.1
@@ -198,17 +198,17 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="<?= BASEURL; ?>public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="<?= BASEURL; ?>public/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="<?= BASEURL; ?>public/vendor/php-email-form/validate.js"></script>
-  <script src="<?= BASEURL; ?>public/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="<?= BASEURL; ?>public/vendor/venobox/venobox.min.js"></script>
-  <script src="<?= BASEURL; ?>public/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="<?= BASEURL; ?>public/vendor/aos/aos.js"></script>
-  <script src="<?= BASEURL; ?>public/vendor/jquery/jquery.min.js"></script>
+  <script src="<?= BASEURL; ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= BASEURL; ?>/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="<?= BASEURL; ?>/vendor/php-email-form/validate.js"></script>
+  <script src="<?= BASEURL; ?>/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="<?= BASEURL; ?>/vendor/venobox/venobox.min.js"></script>
+  <script src="<?= BASEURL; ?>/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="<?= BASEURL; ?>/vendor/aos/aos.js"></script>
+  <script src="<?= BASEURL; ?>/vendor/jquery/jquery.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="<?= BASEURL; ?>public/js/main.js"></script>
+  <script src="<?= BASEURL; ?>/js/main.js"></script>
 
 </body>
 
