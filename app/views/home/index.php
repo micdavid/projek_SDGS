@@ -129,12 +129,12 @@
                                 <div class="card">
                                     <img src="<?= BASEURL; ?><?=$cm['img']; ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <a href=""><h5 class="card-title"><?=$cm['judul']; ?></h5></a>
+                                        <a href="<?= BASEURL; ?>/detail"><h5 class="card-title"><?=$cm['judul']; ?></h5></a>
                                         <p class="card-text mb-2">
                                             <small class="text-muted"><?=$cm['tanggal']; ?></small>
                                         </p>
                                         <p class="card-text mb-3"><?=$cm['subTittle']; ?></p>
-                                        <a class="btn btn-danger" href="#" role="button">Donasi Sekarang</a>
+                                        <a class="btn btn-danger" href="" role="button">Donasi Sekarang</a>
                                     </div>
                                 </div>
                             </div>

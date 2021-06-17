@@ -57,7 +57,7 @@
         <div class="container d-flex align-items-center">
 
             <h1 class="logo mr-auto">
-                <a href="<?= BASEURL; ?>">Coh</a>
+                <a href="">Coh</a>
             </h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -85,7 +85,7 @@
             <div class="container">
 
                 <ol>
-                    <li><a href="<?= BASEURL; ?>">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li>Inner Page</li>
                 </ol>
                 <h2>Inner Page</h2>
