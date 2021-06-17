@@ -57,7 +57,7 @@
         <div class="container d-flex align-items-center">
 
             <h1 class="logo mr-auto">
-                <a href="index.html">Coh</a>
+                <a href="<?= BASEURL; ?>">Coh</a>
             </h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -85,7 +85,7 @@
             <div class="container">
 
                 <ol>
-                    <li><a href="../index/index.html">Home</a></li>
+                    <li><a href="<?= BASEURL; ?>">Home</a></li>
                     <li>Inner Page</li>
                 </ol>
                 <h2>Inner Page</h2>
@@ -153,7 +153,7 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Day</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Coh</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
