@@ -56,7 +56,7 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="<?= BASEURL;?>">Coh</a></h1>
+      <h1 class="logo mr-auto"><a href="<?= BASEURL; ?>">Coh</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -82,18 +82,34 @@
 
         <ol>
           <li><a href="<?= BASEURL; ?>">Home</a></li>
-          <li>Inner Page</li>
+          <li>Detail Page</li>
         </ol>
-        <h2>Inner Page</h2>
+        <h2>Detail Page</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
     <section class="inner-page">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+
+        <?php foreach ($data['cm'] as $cm) : ?>
+          <?php if ($cm['id'] < 2) { ?>
+
+            <div class="card">
+              <img src="<?= BASEURL; ?><?= $cm['img']; ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a href="<?= BASEURL; ?>/detail"><?= $cm['judul']; ?></a></h5>
+                <p class="card-text mb-4">
+                  <small class="text-muted"><?= $cm['tanggal']; ?></small>
+                </p>
+                <p class="card-text" style="text-align: justify;"><?= $cm['deskripsi']; ?></p>
+                <a class="btn btn-danger" href="" role="button">Donasi Sekarang</a>
+              </div>
+
+            </div>
+
+          <?php } ?>
+        <?php endforeach ?>
       </div>
     </section>
 
