@@ -16,7 +16,7 @@ class CharityModel {
             "judul" => "Pasrah Berharap Menghadapi Kanker Getah Bening dan Tumor",
             "id" => 2,
             "tanggal" => "16 Juni 2021",
-            "subTittle" => "Bintik di wajah Parman yang dikira hanya benjolan biasa, ternyata malah makin membesar dari waktu ke waktu. Kurang lebih...",
+            "subTittle" => "Bintik di wajah Parman yang dikira hanya benjolan biasa, ternyata malah makin membesar dari waktu ke waktu. Kurang lebih 1 tahun sudah...",
             "deskripsi" => "Bintik di wajah Parman yang dikira hanya benjolan biasa, ternyata malah makin membesar dari waktu ke waktu. Kurang lebih 1 tahun sudah parman harus bertahan hidup dengan tumor di mata kanan dan kelenjar getah bening di leher nya. Tumor itu bahkan telah merenggut pengelihatannya. Parman mengaku keluarganya sudah berupaya sekuat tenaga untuk berobat. Kondisi ekonomi yang tergolong lemah membuat keluarganya tidak mampu memberikan pengobatan secara maksimal. Semua pengobatan dilakukan hanya secara tradisional. Sebelumnya, diketahui Parman sudah dibawa ke RS Cipto Mangunkusumo (RSCM). Saat ini tumor dan kelenjar getah bening yang menyerang Parman sudah semakin membesar hingga mulai mengganggu dia untuk makan. Parman hanya bisa berbaring tanpa mengkonsumsi obat dari dokter, dan hanya bisa berharap para dermawan maupun pemerintah mau melanjutkan pengobatannya."
         ],
         [
