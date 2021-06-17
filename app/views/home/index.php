@@ -64,7 +64,7 @@
                 <ul>
                     <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services">Charity</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
 
@@ -129,7 +129,7 @@
                                 <div class="card">
                                     <img src="<?= BASEURL; ?><?=$cm['img']; ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <a href="<?= BASEURL; ?>/detail"><h5 class="card-title"><?=$cm['judul']; ?></h5></a>
+                                        <h5 class="card-title"><a href="<?= BASEURL; ?>/detail"><?=$cm['judul']; ?></a></h5>
                                         <p class="card-text mb-2">
                                             <small class="text-muted"><?=$cm['tanggal']; ?></small>
                                         </p>
