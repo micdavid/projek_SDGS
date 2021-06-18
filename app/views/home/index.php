@@ -346,11 +346,11 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-info">
-                            <h3>Coh</h3>
+                            <h3>COH</h3>
                             <p>
-                                A108 Adam Street <br> NY 535022, USA<br><br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                Jl Kapt. Pattimura 99 Tangerang <br> 98128, Indonesia<br><br>
+                                <strong>Phone:</strong> +62 812 3223 0090<br>
+                                <strong>Email:</strong> fathordavid_tim@gmail.com<br>
                             </p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -372,8 +372,8 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h4>Kritik dan Saran</h4>
+                        <p>Silahkan beri kami kritik maupun saran. Kami akan menerimanya dengan senang hati</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>

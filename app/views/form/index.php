@@ -42,8 +42,8 @@
     <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top header-inner-pages">
         <div class="container d-flex">
             <div class="contact-info mr-auto">
-                <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-                <i class="icofont-phone"></i> +1 5589 55488 55
+                <i class="icofont-envelope"></i> <a href="fathordavid_tim@gmail.com">fathordavid_tim@gmail.com</a>
+                <i class="icofont-phone"></i> +62 812 3223 0090
             </div>
             <div class="social-links">
                 <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -62,14 +62,14 @@
             <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav class="nav-menu d-none d-lg-block">
-                <ul>
+                <!-- <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
 
-                </ul>
+                </ul> -->
             </nav><!-- .nav-menu -->
 
         </div>
@@ -155,12 +155,11 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-info">
-                            <h3>Coh</h3>
+                            <h3>COH</h3>
                             <p>
-                                A108 Adam Street <br>
-                                NY 535022, USA<br><br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                Jl Kapt. Pattimura 99 Tangerang <br> 98128, Indonesia<br><br>
+                                <strong>Phone:</strong> +62 812 3223 0090<br>
+                                <strong>Email:</strong> fathordavid_tim@gmail.com<br>
                             </p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -182,8 +181,8 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h4>Kritik dan Saran</h4>
+                        <p>Silahkan beri kami kritik maupun saran. Kami akan menerimanya dengan senang hati</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
