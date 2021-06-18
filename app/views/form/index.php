@@ -1,3 +1,49 @@
+<?php
+
+$server = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$database = "donatur";
+
+$conn = mysqli_connect($server, $dbuser, $dbpass, $database);
+
+if (!$conn) {
+    die("<script>alert('Connection Failed.')</script>");
+}
+
+if (isset($_POST['submit'])) {
+
+    $validasi_nomer = filter_input(INPUT_POST, 'nomerHP', FILTER_VALIDATE_INT);
+    $validasi_nominal = filter_input(INPUT_POST, 'nominal', FILTER_VALIDATE_INT);
+
+    $location = "uploads/";
+    $nama = $_POST['namaLengkap'];
+    $kode = $_POST['kodeDonasi'];
+    $nomer = $_POST['nomerHP'];
+    $nominal = $_POST['nominal'];
+    $file_new_name = date("dmy") . time() . $_FILES["file"]["name"];
+    $file_name = $_FILES["file"]["name"];
+    $file_temp = $_FILES["file"]["tmp_name"];
+    $file_size = $_FILES["file"]["size"];
+
+
+    if ($file_size > 10485760) {
+        echo "<script>alert('Woops! File is too big. Maximum file size allowed for upload 10 MB.')</script>";
+    } else {
+        $sql = "INSERT INTO contributor (namaLengkap, kodeDonasi, nomerHP, nominal, bukti)
+				VALUES ('$nama', '$kode', '$nomer', '$nominal', '$file_name')";
+        $result = mysqli_query($conn, $sql);
+        if ($result) {
+            move_uploaded_file($file_temp, $location . $file_new_name);
+            echo "<script>alert('Wow! File uploaded successfully.')</script>";
+        } else {
+            echo "<script>alert('Woops! Something wong went.')</script>";
+        }
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +72,7 @@
 
     <!-- Template Main CSS File -->
     <link href="<?= BASEURL; ?>/css/style.css" rel="stylesheet">
+    <link href="<?= BASEURL; ?>/css/upload.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Day - v2.2.1
@@ -92,35 +139,52 @@
         <section class="inner-page">
             <div class="container">
 
-                <form>
-                    <div class="row mb-3">
-                        <label for="kodeDonasi" class="col-sm-2 col-form-label">Kode Donasi</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="kodeDonasi">
-                        </div>
-                    </div>
+                <form action="form/index.php" method="POST" enctype="multipart/form-data">
                     <div class="row mb-3">
                         <label for="namaLengkap" class="col-sm-2 col-form-label">Nama Lengkap</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="namaLengkap">
+                            <input type="text" class="form-control" id="namaLengkap" name="namaLengkap">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="kodeDonasi" class="col-sm-2 col-form-label">Kode Donasi</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="kodeDonasi" name="kodeDonasi">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="nomerHP" class="col-sm-2 col-form-label">No. HP</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="nomerHP">
+                            <input type="text" class="form-control" id="nomerHP" name="nomerHP">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="nominal" class="col-sm-2 col-form-label">Nominal</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="nominal">
+                            <input type="text" class="form-control" id="nominal" name="nominal">
                         </div>
                     </div>
                     <br>
                     <h4 style="text-align: center;">Silahkan transfer amal anda ke no rekening berikut : </h4>
                     <h4 style="text-align: center;">0827476571 a.n FATHORROSI</h4>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="file__upload">
+                        <div class="body">
+
+                            <div class="header">
+                                <h3>Silahkan Upload Bukti Pembayaran Anda</h3>
+                            </div>
+                            <input type="file" name="file" id="upload" required>
+                            <label for="upload">
+                                <i class="fa fa-file-text-o fa-3x"></i>
+                                <p>
+                                    <strong>Drag and drop</strong> files here<br>
+                                    or <span>browse</span> to begin the upload
+                                </p>
+                            </label>
+
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger" name="submit">Submit</button>
                 </form>
 
 

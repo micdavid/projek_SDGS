@@ -6,4 +6,9 @@ class Form extends Controller
         $data['title'] = 'Donasi Sekarang';
         $this->view('form/index', $data);
     }
+
+    public function add()
+    {
+        
+    }
 }
