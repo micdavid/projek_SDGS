@@ -93,7 +93,7 @@
             <div class="container">
 
                 <?php foreach ($data['cm'] as $cm) : ?>
-                    <?php if ($cm['id'] > 3 && $cm['id'] < 6) { ?>
+                    <?php if ($cm['id'] > 3 && $cm['id'] <5) { ?>
 
                         <div class="card">
                             <img src="<?= BASEURL; ?><?= $cm['img']; ?>" class="card-img-top" alt="...">
