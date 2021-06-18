@@ -108,7 +108,7 @@
                   </p>
                 </b>
                 <p class="card-text" style="text-align: justify;"><?= $cm['deskripsi']; ?></p>
-                <a class="btn btn-danger" href="" role="button">Donasi Sekarang</a>
+                <a class="btn btn-danger" href="<?= BASEURL; ?>/form" role="button">Donasi Sekarang</a>
               </div>
 
             </div>
