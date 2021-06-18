@@ -22,7 +22,7 @@ class Form extends Controller
 
         if (isset($_POST['submit'])) {
 
-            $location = "../public/photos/bukti";
+            $location = "../public/uploads/bukti";
             $nama = $_POST["namaLengkap"];
             $kode = $_POST["kodeDonasi"];
             $nomer = $_POST["nomerHP"];
