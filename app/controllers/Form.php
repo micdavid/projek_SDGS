@@ -22,11 +22,11 @@ class Form extends Controller
 
         if (isset($_POST['submit'])) {
 
-            $location = "../uploads/";
-            $nama = $_POST['namaLengkap'];
-            $kode = $_POST['kodeDonasi'];
-            $nomer = $_POST['nomerHP'];
-            $nominal = $_POST['nominal'];
+            $location = "../public/photos/bukti";
+            $nama = $_POST["namaLengkap"];
+            $kode = $_POST["kodeDonasi"];
+            $nomer = $_POST["nomerHP"];
+            $nominal = $_POST["nominal"];
             $file_new_name = date("dmy") . time() . $_FILES["file"]["name"];
             $file_name = $_FILES["file"]["name"];
             $file_temp = $_FILES["file"]["tmp_name"];
@@ -41,9 +41,9 @@ class Form extends Controller
                 $result = mysqli_query($conn, $sql);
                 if ($result) {
                     move_uploaded_file($file_temp, $location . $file_new_name);
-                    echo "<script>alert('Wow! File uploaded successfully.')</script>";
+                    echo "<script>alert('Form berhasil disubmit!')</script>";
                 } else {
-                    echo "<script>alert('Woops! Something wong went.')</script>";
+                    echo "<script>alert('Woops! Sepertinya foto anda bermasalah.')</script>";
                 }
             }
         }

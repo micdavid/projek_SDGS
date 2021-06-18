@@ -97,25 +97,25 @@
                     <div class="row mb-3">
                         <label for="namaLengkap" class="col-sm-2 col-form-label">Nama Lengkap</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="namaLengkap" name="namaLengkap">
+                            <input type="text" class="form-control" id="namaLengkap" name="namaLengkap" required>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="kodeDonasi" class="col-sm-2 col-form-label">Kode Donasi</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="kodeDonasi" name="kodeDonasi">
+                            <input type="text" class="form-control" id="kodeDonasi" name="kodeDonasi" required>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="nomerHP" class="col-sm-2 col-form-label">No. HP</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="nomerHP" name="nomerHP">
+                            <input type="text" class="form-control" id="nomerHP" name="nomerHP" required>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="nominal" class="col-sm-2 col-form-label">Nominal</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="nominal" name="nominal">
+                            <input type="text" class="form-control" id="nominal" name="nominal" required>
                         </div>
                     </div>
                     <br>
