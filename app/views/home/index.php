@@ -41,8 +41,8 @@
     <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
         <div class="container d-flex">
             <div class="contact-info mr-auto">
-                <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-                <i class="icofont-phone"></i> +1 5589 55488 55
+                <i class="icofont-envelope"></i> <a href="fathordavid_tim@gmail.com">fathordavid_tim@gmail.com</a>
+                <i class="icofont-phone"></i> +62 812 3223 0090
             </div>
             <div class="social-links">
                 <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -199,7 +199,7 @@
                 <div class="text-center">
                     <h3>Donasi Sekarang</h3>
                     <p> Jika kita masih menganggap kemanusiaan itu berharga, maka bantulah saudara kita yang memmbutuhkan bantuan di luar sana.</p>
-                    <a class="cta-btn" href="#">Klik untuk Berdonasi!</a>
+                    <a class="cta-btn" href="<?= BASEURL; ?>/form">Klik untuk Berdonasi!</a>
                 </div>
 
             </div>
